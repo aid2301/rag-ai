@@ -33,6 +33,6 @@ fast、standard、deep 由后台默认模式或请求选择。文档、画像、
 
 ## 配置与运行
 
-环境变量优先于根目录 `.env` 与 `backend/.env`。模型配置还支持后台数据库设置，具体合并行为见 `services/settings_service.py`。`SECRET_KEY` 同样由配置模块读取；为空时生成并保存到 `data/secret_key`。
+静态配置按进程环境变量 → `backend/.env` → 根目录 `.env` → 代码默认值读取。后台数据库中保存的模型配置优先于这些默认值；字符串空值的回退规则见 [配置说明](configuration.md)。`SECRET_KEY` 同样由配置模块读取；为空时生成并保存到 `data/secret_key`。
 
 权限校验在服务端执行，普通用户只能访问自己的会话与用量。管理员负责文档和用户管理，并可审计对话。演示 UI 展示的是执行阶段，不是模型内部推理。

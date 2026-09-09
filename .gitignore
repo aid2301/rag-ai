@@ -34,7 +34,7 @@ frontend/.vite/
 *.tsbuildinfo
 
 # 评估输出
-eval_report.json
+eval_report*.json
 
 # 运行时日志
 backend/uvicorn.err.log
