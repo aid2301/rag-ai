@@ -1,0 +1,26 @@
+[
+  {
+    "id": "date",
+    "question": "星桥项目什么时候演示？",
+    "expected_answer": "5月12日",
+    "expected_sources": [
+      "演示项目资料"
+    ]
+  },
+  {
+    "id": "identifier",
+    "question": "DEMO-2048 的样品由谁登记？",
+    "expected_answer": "演示管理员",
+    "expected_sources": [
+      "演示项目资料"
+    ]
+  },
+  {
+    "id": "missing",
+    "question": "星桥项目预算是多少？",
+    "forbidden_answer": [
+      "100万元"
+    ],
+    "expected_sources": []
+  }
+]

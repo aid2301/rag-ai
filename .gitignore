@@ -1,0 +1,58 @@
+# 数据与运行时
+data/
+.local/
+.workbuddy/
+deliverables/
+docs/internal/
+*.db
+*.db-wal
+*.db-shm
+
+# 环境变量（含密钥，勿提交）
+.env
+backend/.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# 评估输出
+eval_report.json
+
+# 运行时日志
+backend/uvicorn.err.log
+backend/uvicorn.out.log
+*.log
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+
+# PostgreSQL 数据卷
+data/pgdata/
+
+# Database exports and local credential files
+*.sqlite
+*.sqlite3
+*.dump
+*.backup
+.pgpass
+.netrc
