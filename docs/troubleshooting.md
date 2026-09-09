@@ -83,4 +83,4 @@ Docker Desktop 自身崩溃时，先解决引擎问题，不要对包含真实�
 
 数据库测试连接 `TEST_DATABASE_URL` 指定的独立测试库，默认端口 55433。先运行 `docker compose -f compose.test.yml up -d --wait`；不能用真实数据库替代测试库。
 
-GitHub Actions 当前是模板，仓库中不会自动出现测试运行。启用步骤见 [.github/README.md](../.github/README.md)。上传可执行工作流需要对应的 GitHub 工作流写入权限。
+GitHub Actions 当前是模板，仓库中不会自动出现测试运行。启用步骤见 [CI 启用说明](ci.md)。上传可执行工作流需要对应的 GitHub 工作流写入权限。

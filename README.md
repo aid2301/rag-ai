@@ -224,7 +224,7 @@ docker compose -f compose.test.yml down
 
 `TEST_DATABASE_URL` 必须指向以 `_test` 结尾的专用测试库。测试会重建其中的 public schema，不能指向需要保留的数据。无数据库时的独立测试命令见 [开发指南](docs/development.md)。
 
-[GitHub Actions 配置](.github/README.md) 目前作为模板提供，尚未启用自动运行。模板包含后端测试、前端检查和 Docker 构建。
+[GitHub Actions 配置](docs/ci.md) 目前作为模板提供，尚未启用自动运行。模板包含后端测试、前端检查和 Docker 构建。
 
 ### 真实模型评估
 
